@@ -1,0 +1,26 @@
+.avcontainssvg {
+  max-height: 100px;
+  svg {
+    @apply mb-10;
+    max-height: 100px;
+  }
+}
+
+.slogan1 {
+  @apply my-2 mb-10 text-3xl md:text-4xl font-bold;
+  visibility: visible;
+  animation-delay: 0.1s;
+  animation-name: fadeInUp;
+}
+
+.btn_blue_link {
+  @apply tracking-wide block sm:inline-block py-4 px-8 text-xs text-white text-center font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded;
+  visibility: visible;
+  animation-name: fadeInUp;
+}
+.btn_white_link {
+  @apply block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-center font-semibold leading-none bg-white border hover:bg-gray-100 rounded;
+  visibility: visible;
+  animation-delay: 0.3s;
+  animation-name: fadeInUp;
+}
