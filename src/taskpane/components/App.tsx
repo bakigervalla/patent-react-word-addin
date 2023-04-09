@@ -1,5 +1,6 @@
 import * as React from "react";
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
+import { CitationStoreProvider, CitationSupportProvider } from "../contexts/index";
 
 import Progress from "./shared/Progress";
 import { Dashboard, Citation, Login } from "@pages/index";
@@ -58,7 +59,7 @@ export default class App extends React.Component<AppProps, AppState> {
       <div className="flex flex-col h-screen justify-between">
         <Router>
           <Header />
-          <div className="flex h-screen items-center">
+          <div className="flex h-screen">
             <Route
               exact
               path=""
@@ -66,9 +67,13 @@ export default class App extends React.Component<AppProps, AppState> {
                 return <Redirect to="/citation" />;
               }}
             />
-            <Route path="/dashboard" component={Dashboard} />
-            <Route path="/citation" component={Citation} />
-            <Route path="/login" component={Login} />
+            <CitationSupportProvider>
+              <CitationStoreProvider>
+                <Route path="/dashboard" component={Dashboard} />
+                <Route path="/citation" component={Citation} />
+                <Route path="/login" component={Login} />
+              </CitationStoreProvider>
+            </CitationSupportProvider>
           </div>
         </Router>
 

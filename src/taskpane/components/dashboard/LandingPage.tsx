@@ -7,9 +7,9 @@ const LandingPage = () => {
   const history = useHistory();
 
   return (
-    <div className="max-w-lg mx-auto items-center text-center">
-      <div>
-        <span className="logo avia-svg-logo">
+    <div className="mt-20 mx-auto items-center text-center">
+      <div className="max-w-lg mx-auto mb-12 text-center">
+        <span className={`${styles.home} avia-svg-logo`}>
           <a href="https://www.boehmert.de/en/" className={styles.avcontainssvg}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -155,7 +155,7 @@ const LandingPage = () => {
           </a>
         </span>
       </div>
-      <div className="max-w-lg mx-auto mb-12 text-center">
+      <div className={`${styles.home} max-w-lg mx-auto mb-12 text-center`}>
         <h2 className={styles.slogan1} data-wow-delay=".1s">
           Super<span className="text-blue-500">B</span> Services to Get
           <br />
@@ -163,7 +163,7 @@ const LandingPage = () => {
         </h2>
         <p>One-on-one consulting and creative solutions to protect your intellectual property.</p>
       </div>
-      <div className="text-center">
+      <div className={`${styles.home} inline-block items-center text-center`}>
         <a className={styles.btn_white_link} data-wow-delay=".3s" href="#how-we-work">
           How We Work?
         </a>

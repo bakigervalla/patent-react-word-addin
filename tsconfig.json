@@ -19,7 +19,9 @@
     "paths": {
       "@components/*": ["./src/taskpane/components/*"],
       "@hooks/*": ["./src/taskpane/hooks/*"],
-      "@pages/*": ["./src/taskpane/pages/*"]
+      "@pages/*": ["./src/taskpane/pages/*"],
+      "@context/*": ["./src/taskpane/contexts/*"],
+      "@services/*": ["./src/services/*"]
     }
   },
   "exclude": ["node_modules", "build"],

@@ -1,7 +1,16 @@
+.home {
+  @media only screen and (min-width: 0px) {
+    @apply w-80;
+  }
+  @media only screen and (min-width: 640px) {
+    @apply w-screen text-center
+  }
+}
+
 .avcontainssvg {
   max-height: 100px;
+  display: flex !important;
   svg {
-    @apply mb-10;
     max-height: 100px;
   }
 }

@@ -8,7 +8,7 @@ const CitationsList = ({ items }: any, { onChange }: ItemProps) => {
   console.log("items", items);
 
   return (
-    <div className="z-10 mt-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-80 dark:bg-gray-700 dark:divide-gray-600">
+    <div className="z-10 mt-4 max-w-lg items-center text-center bg-white divide-y divide-gray-100 rounded-lg shadow w-80 dark:bg-gray-700 dark:divide-gray-600">
       <ul
         className="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200"
         aria-labelledby="dropdownHelperRadioButton"
