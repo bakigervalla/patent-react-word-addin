@@ -64,7 +64,7 @@ export default class App extends React.Component<AppProps, AppState> {
               exact
               path=""
               render={() => {
-                return <Redirect to="/citation" />;
+                return <Redirect to="/dashboard" />;
               }}
             />
             <CitationSupportProvider>

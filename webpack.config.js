@@ -34,6 +34,7 @@ module.exports = async (env, options) => {
         "@hooks": path.resolve(__dirname, "src/taskpane/hooks"),
         "@pages": path.resolve(__dirname, "src/taskpane/pages"),
         "@services": path.resolve(__dirname, "src/services"),
+        "@context": path.resolve(__dirname, "src/taskpane/contexts"),
       },
     },
     module: {
