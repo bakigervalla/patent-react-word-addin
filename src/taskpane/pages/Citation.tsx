@@ -37,9 +37,12 @@ const Citation = () => {
     [citeService.wordApi, dispatch]
   );
 
-  const insertCitation = async (citation: any): Promise<void> => {
-    await citeService.wordApi.insertCitations(citation);
-  };
+  const insertCitation = useCallback(
+    async (citation: any): Promise<void> => {
+      await citeService.wordApi.insertCitations(citation);
+    },
+    [citeService.wordApi, dispatch]
+  );
 
   return !loading ? (
     <>
