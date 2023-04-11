@@ -5,7 +5,7 @@ class WordApi {
   async searchApplicationNumber(): Promise<string | unknown> {
     return Word.run(async (context) => {
       // Queue a command to search the document and also don't ignore punctuation.
-      const searchResults = context.document.body.search("EP12345678", { ignorePunct: true });
+      const searchResults = context.document.body.search("EP22184835", { ignorePunct: true });
 
       // Queue a command to load the font property values.
       searchResults.load("font, text");
